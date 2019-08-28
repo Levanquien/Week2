@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Bích</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Cạnh a"));
+    let b = parseFloat(prompt("Cạnh b"));
+    let c = parseFloat(prompt("Cạnh c"));
+    if (a > 0 && b > 0 && c > 0) {
+        if (a + b > c || a + c > b || b + c > a) {
+            alert("Là cạnh của tam giác");
+        }
+    } else {
+        alert("Không Phải cạnh của tam giác");
+    }
+</script>
+</body>
+</html>

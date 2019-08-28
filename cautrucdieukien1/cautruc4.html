@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("Nhập số a"));
+    var b = parseInt(prompt("Nhập số b"));
+    var c = parseInt(prompt("Nhập số c"));
+    if (a == b || a==c || b==c) {
+        alert("Có hai hoặc ba số băng nhau");
+        var max;
+        if ((a >= b) && (a >= c)) {
+            max = a;
+        } else {
+            if ((b >= a) && (b >= c)) {
+                max = b;
+            } else {
+                max = c;
+            }
+        }
+        alert("Số lớn nhất là: " + max);
+    }
+
+
+
+</script>
+</body>
+</html>

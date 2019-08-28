@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hóa đơn tiền điện</title>
+</head>
+<body>
+<script>
+    var phut = parseInt(prompt("Số phút gọi"));
+    var vat = 25000;
+    var tien;
+    if (phut < 50) {
+        tien = phut * 600 + vat;
+        alert("Số tiền phải trả: " + tien + " VNĐ");
+    } else {
+        if (phut < 200) {
+            tien = 50 * 600 + (phut - 50) * 400 + vat;
+            alert("Số tiền phải trả: " + tien+" VNĐ");
+        } else {
+            if (phut > 200) {
+                tien = 50 * 600 + 150 * 400 + (phut - 200) * 200 + vat;
+                alert("Số tiền phải trả: " + tien+" VNĐ");
+            }
+        }
+    }
+</script>
+</body>
+</html>

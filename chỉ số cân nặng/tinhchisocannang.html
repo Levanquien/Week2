@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let BMI;
+    let cannang = prompt("Cân nặng Kg");
+    let chieucao = prompt("Chiều cao tính mét, ví dụ 1.7m");
+    BMI = cannang / (chieucao ** 2);
+    alert("BMI = " + BMI)
+    if (BMI < 18.5)
+        document.write("Underweight");
+    else if (BMI < 25.0)
+        document.write("Normal");
+    else if (BMI < 30)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+</script>
+</body>
+</html>

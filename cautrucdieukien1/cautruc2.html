@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3>Xét tuổi vào lớp 10</h3>
+<div> Mời nhập tuổi</div>
+<input type="text" id="nhaptuoi">
+<input type="button" value="Xét tiêu chuẩn" onclick="fixx()">
+<p id="ketqua"></p>
+<script>
+    function fixx() {
+        let number = parseInt(document.getElementById("nhaptuoi").value);
+        let ketqua = document.getElementById("ketqua");
+        if (number < 14) {
+            ketqua.innerHTML = "Chưa đủ tiêu chuẩn"
+        } else if (number < 19) {
+            ketqua.innerHTML = "Đủ tiêu chuẩn"
+        }else {
+            ketqua.innerText = " Quá tuổi so với quy định"
+        }
+    }
+</script>
+</body>
+</html>

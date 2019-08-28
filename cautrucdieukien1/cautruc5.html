@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<script>
+    var ktra = parseFloat(prompt("Điểm kiểm tra"));
+    var giuaki = parseFloat(prompt("Điểm thi giữa kì"));
+    var cuoiki = parseFloat(prompt("Điểm thi cuối kì"));
+    var tongdiem = (ktra + cuoiki + giuaki) / 3;
+    if (tongdiem >= 8) {
+        alert("Học lực A")
+    } else {
+        if (tongdiem >= 6.5) {
+            alert("Học lực B")
+        } else {
+            if (tongdiem >= 5) {
+                alert("Học lực C")
+            } else {
+                if (tongdiem >3) {
+                    alert("Thi lại")
+                } else {
+                    alert("Không được lên lớp")
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

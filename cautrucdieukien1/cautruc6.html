@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính % hoa hồng</title>
+</head>
+<body>
+<script>
+    let tongds = parseFloat(prompt("Tổng doanh số bán hàng"));
+    let hoahong;
+    if (tongds > 100) {
+        hoahong = tongds / 100 * 5;
+        alert(hoahong + " triệu")
+    } else if (tongds > 300) {
+        hoahong = tongds / 300 * 10;
+        alert(hoahong + " triệu")
+    } else if (tongds>500){
+        hoahong = tongds/500*15;
+        alert(hoahong+ " triệu")
+    } else
+        alert("NO Momny")
+</script>
+</body>
+</html>
