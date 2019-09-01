@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>abc.xyz</title>
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>fixx</title>
+    </head>
 <body>
 <script>
-    function sumFibs(num) {
-        let sum = 0;
-        let fib = 20;
-        while (sum <= num) {
-            let currentFib = fibo(fib);
-            if (currentFib %2 === 1) {
-                sum += currentFib;
-            }
-            fib++;
-        }
-        return sum;
+    let gioihan = 0;
+    let so1 = 0;
+    let so2 = 1;
+    let tong = 0;
+    for (let f = 0; f < 20; f++) {
+        tong+=so2;
+        gioihan = so2;
+        so2 = so1 + so2;
+        so1 = gioihan;
     }
-    function fibo(n) {
-        if (n <= 1) return 1;
-        return fibo(n - 1) + fibo(n - 2);
-    }
-    alert(sumFibs(10))
+    alert(tong)
 </script>
 </body>
 </html>
