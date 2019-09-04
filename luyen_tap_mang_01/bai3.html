@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = [2, 188, 5, 248, 52, 238, 210, 88, 96, 268, 120, 124, 146, 162, 206, 216, 246, 262];
+    let max = total[0];
+    let medium;
+    for (let i = 0; i < total.length; i++) {
+        if (total[i] > max) {
+            max = total[i];
+             medium = (total.reduce( (accumulator, currentValue) => accumulator + currentValue))/2;
+        }
+    }
+    document.write("Số lớn nhất là: " + max+"<br/>");
+    document.write("Trung bình của các phần tử trong mảng là: "+ medium)
+</script>
+</body>
+</html>

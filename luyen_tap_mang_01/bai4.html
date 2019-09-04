@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var number = [];
+    for (let i = 0; i < 10; i++) {
+        number[i] = prompt("Nhập giá trị");
+        document.writeln(number[i]);
+    }
+    var reverse = [];
+    for (let i = 0; i < number.length; i++) {
+        reverse[number.length - 1 - i] = number[i]
+    }
+    document.writeln("<br>" + "Dãy số bị đảo ngược: " + reverse)
+</script>
+</body>
+</html>

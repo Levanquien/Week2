@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var elenment = [36, 5, 7, 86, 13, 17, 34, 23, 56, 31, 68];
+    var max = elenment[0];
+    var vitri = 0;
+    for (let i = 0; i < elenment.length; i++) {
+        if (elenment[i] > max) {
+            max = elenment[i];
+            vitri = i
+        }
+    }
+    alert("Max: " + max + " At position: " + vitri)
+</script>
+</body>
+</html>
