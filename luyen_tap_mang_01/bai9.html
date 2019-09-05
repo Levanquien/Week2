@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var mang = [2, 4, 5, 6, 8, 7, 2, 3, 1,];
+    var mang1 = [];
+    var mang2 = [];
+    for (let i = 0; i < 5; i++) {
+        mang1[i] = prompt("mang1");
+
+    }
+    for (let i = 0; i < 5; i++) {
+        mang2[i] = prompt("mang2")
+    }
+    var noi = mang.concat(mang1, mang2);
+    alert("mang1: " + mang1);
+    alert("mang2: " + mang2)
+    alert("Mảng đã được nối: " + noi);
+</script>
+</body>
+</html>

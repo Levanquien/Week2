@@ -476,7 +476,7 @@ function Fly(fid, type, color, sh, sw, x, y, fly_img, name, title) {
     }
 }
 
-$(document).click(function(e) {
+(document).click(function(e) {
     if (hasswatter){
         var xOffset = e.pageX;
         var yOffset = e.pageY;

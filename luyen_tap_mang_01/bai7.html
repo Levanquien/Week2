@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var input = [];
+    for (let i = 0; i < 4; i++) {
+        input.push(prompt("Nhập phần tử vào mảng"))
+    }
+    let v = prompt("Nhập v");
+    let check;
+    for (let i = 0; i < input.length; i++) {
+        if (input[i] === v) {
+            check = true;
+        }
+    }
+    document.write(input + "<br>");
+    document.write("Đây là v: " + v + "<br>");
+    if (check = true) {
+        document.write('V is in the array' + '<br>')
+    } else {
+        document.write('V is not in the array' + '<br>')
+    }
+</script>
+</body>
+</html>
