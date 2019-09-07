@@ -6,24 +6,18 @@
 </head>
 <body>
 <script>
-    var input = [];
-    for (let i = 0; i < 4; i++) {
-        input.push(prompt("Nhập phần tử vào mảng"))
+    let input = [];
+    for (let i = 0; i < 5; i++) {
+        input.push(prompt('Nhập phần tử vào mảng'));
     }
-    let v = prompt("Nhập v");
-    let check;
+    let v = prompt('Nhập v: ');
     for (let i = 0; i < input.length; i++) {
         if (input[i] === v) {
-            check = true;
+            input.splice(i, 1);
+            input.push('0');
         }
     }
-    document.write(input + "<br>");
-    document.write("Đây là v: " + v + "<br>");
-    if (check = true) {
-        document.write('V is in the array' + '<br>')
-    } else {
-        document.write('V is not in the array' + '<br>')
-    }
+    document.write(input);
 </script>
 </body>
 </html>

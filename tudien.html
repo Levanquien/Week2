@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="conet1">
+<input type="button" id="timkiem" value="Search" onclick="sear()">
+<div id="ketqua"></div>
+<script>
+    var English = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+    var Vietsub = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín', 'mười'];
+
+    function sear() {
+        let f = document.getElementById("conet1").value;
+        for (let i = 0; i < English.length; i++) {
+            if (f === English[i]) {
+                alert(English[i] + " : " + Vietsub[i]);
+                return Vietsub[i]
+            }
+        }
+        alert("Not found");
+        return false
+    }
+
+</script>
+</body>
+</html>

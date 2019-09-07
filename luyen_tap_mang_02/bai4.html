@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var key = prompt("nhâp chuỗi");
+    var chiso = key.length;
+    var dem = 1;
+    for (let i = 0; i < chiso; i++) {
+        if ((key[0] != " ") && (key[i] == " ") && (key[i + 1] != " ") && (key[1 + i] != "\0")) {
+            dem++
+        }
+    }
+    alert(dem)
+</script>
+</body>
+</html>
